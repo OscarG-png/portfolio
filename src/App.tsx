@@ -1,12 +1,23 @@
+import {
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuIndicator,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+  NavigationMenuViewport,
+} from "@/components/ui/navigation-menu"
 
 
 function App() {
 
   return (
     <>
-      <h1 className="text-3xl font-bold text-green-900">
-        Hello world! test
-      </h1>
+    <div className="grid grid-cols-2">
+      <NavigationMenu></NavigationMenu>
+      <p>test</p>
+    </div>
     </>
   )
 }
