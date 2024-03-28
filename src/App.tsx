@@ -1,36 +1,19 @@
-import {
-  NavigationMenu,
-  NavigationMenuContent,
-  NavigationMenuIndicator,
-  NavigationMenuItem,
-  NavigationMenuLink,
-  NavigationMenuList,
-  NavigationMenuTrigger,
-  NavigationMenuViewport,
-} from "@/components/ui/navigation-menu"
-
+import { BrowserRouter, Routes, Route } from "react-router-dom"
+import NavMenu from "./NavMenu"
+import HomePage from "./HomePage"
 
 function App() {
 
   return (
     <>
-    <div>
-      <NavigationMenu>
-        <NavigationMenuItem className="list-none">
-          <NavigationMenuTrigger>
-            <p>About me</p>
-          </NavigationMenuTrigger>
-        </NavigationMenuItem>
-        <NavigationMenuItem className="list-none">
-          <NavigationMenuTrigger>
-            <p>Projects</p>
-          </NavigationMenuTrigger>
-        </NavigationMenuItem>
-        <NavigationMenuItem className="list-none">
-          <p>Contact</p>
-        </NavigationMenuItem>
-      </NavigationMenu>
-    </div>
+      <NavMenu />
+      <div className="container mx-auto">
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+          </Routes>
+        </BrowserRouter>
+      </div>
     </>
   )
 }
