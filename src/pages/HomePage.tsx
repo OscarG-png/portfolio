@@ -1,6 +1,6 @@
-import { Github } from './components/icons/Github';
-import { Gitlab } from './components/icons/Gitlab';
-import { Linkedin } from './components/icons/Linkedin';
+import { Github } from '../components/icons/Github';
+import { Gitlab } from '../components/icons/Gitlab';
+import { Linkedin } from '../components/icons/Linkedin';
 import { Link } from 'react-router-dom';
 
 export default function HomePage() {
