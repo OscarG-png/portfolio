@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 export default function HomePage() {
     return (
         <>
-            <div className="flex flex-col items-center gap-2 mt-5 bg-green-200 ">
+            <div className="flex flex-col items-center gap-5 mt-5">
                 <h1 className="justify-center">Oscar Gamez</h1>
                 <img
                     alt="profile"
