@@ -7,16 +7,17 @@ import {
     NavigationMenuList,
     NavigationMenuTrigger,
     NavigationMenuViewport,
-} from "@/components/ui/navigation-menu"
+} from '@/components/ui/navigation-menu';
+import { Link } from 'react-router-dom';
 
 export default function NavMenu() {
-    return(
+    return (
         <div>
             <NavigationMenu>
                 <NavigationMenuItem className="list-none">
-                    <NavigationMenuTrigger>
+                    <NavigationMenuLink>
                         <p>About me</p>
-                    </NavigationMenuTrigger>
+                    </NavigationMenuLink>
                 </NavigationMenuItem>
                 <NavigationMenuItem className="list-none">
                     <NavigationMenuTrigger>
@@ -28,5 +29,5 @@ export default function NavMenu() {
                 </NavigationMenuItem>
             </NavigationMenu>
         </div>
-    )
+    );
 }
