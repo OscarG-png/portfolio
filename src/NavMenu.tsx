@@ -15,7 +15,7 @@ export default function NavMenu() {
         <div>
             <NavigationMenu>
                 <NavigationMenuItem className="list-none">
-                    <NavigationMenuLink>
+                    <NavigationMenuLink href="/aboutme">
                         <p>About me</p>
                     </NavigationMenuLink>
                 </NavigationMenuItem>
