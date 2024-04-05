@@ -3,12 +3,16 @@ import NavMenu from './NavMenu';
 import HomePage from './pages/HomePage';
 import AboutMe from './pages/Aboutme';
 import { ThemeProvider } from '@/components/theme-provider.tsx';
+import { ModeToggle } from '@/components/mode-toggle';
 
 function App() {
     return (
         <>
             <ThemeProvider defaultTheme="light" storageKey="vite-ui-theme">
-                <NavMenu />
+                <div className="flex flex-row justify-between mx-5 my-5">
+                    <NavMenu />
+                    <ModeToggle />
+                </div>
                 <div className="container mx-auto">
                     <BrowserRouter>
                         <Routes>
