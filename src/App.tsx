@@ -8,7 +8,7 @@ import { ModeToggle } from '@/components/mode-toggle';
 function App() {
     return (
         <>
-            <ThemeProvider defaultTheme="light" storageKey="vite-ui-theme">
+            <ThemeProvider defaultTheme="system" storageKey="vite-ui-theme">
                 <div className="flex flex-row justify-between mx-5 my-5">
                     <NavMenu />
                     <ModeToggle />
