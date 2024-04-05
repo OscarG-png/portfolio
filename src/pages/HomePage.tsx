@@ -1,3 +1,4 @@
+import { Button } from '@/components/ui/button';
 import { Github } from '../components/icons/Github';
 import { Gitlab } from '../components/icons/Gitlab';
 import { Linkedin } from '../components/icons/Linkedin';
@@ -24,6 +25,9 @@ export default function HomePage() {
                         <Gitlab />
                     </Link>
                 </div>
+                <Link to="https://drive.google.com/file/d/1L3ybSFuIRNbSYwzyHFlYmYvYLWJmomBh/view?usp=drive_link">
+                    <Button>Resume</Button>
+                </Link>
             </div>
         </>
     );
