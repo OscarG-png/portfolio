@@ -9,7 +9,7 @@ export default function HomePage() {
         'https://drive.google.com/file/d/1rSLPJtaiFng3bLktbIf4GT7x5kLRMg_6/view?usp=sharing';
     return (
         <>
-            <div className="flex flex-col items-center gap-5 mt-10">
+            <div className="flex flex-col items-center h-screen gap-10 mt-20">
                 <h1 className="justify-center text-4xl">Oscar Gamez</h1>
                 <img
                     alt="profile"
