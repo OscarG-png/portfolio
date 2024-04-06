@@ -5,6 +5,8 @@ import { Linkedin } from '../components/icons/Linkedin';
 import { Link } from 'react-router-dom';
 
 export default function HomePage() {
+    const resumeURL =
+        'https://drive.google.com/file/d/1rSLPJtaiFng3bLktbIf4GT7x5kLRMg_6/view?usp=sharing';
     return (
         <>
             <div className="flex flex-col items-center gap-5 mt-10">
@@ -25,8 +27,8 @@ export default function HomePage() {
                         <Gitlab />
                     </Link>
                 </div>
-                <Link to="https://drive.google.com/file/d/1L3ybSFuIRNbSYwzyHFlYmYvYLWJmomBh/view?usp=drive_link">
-                    <Button>Resume</Button>
+                <Link to={resumeURL}>
+                    <Button>Download Resume</Button>
                 </Link>
             </div>
         </>
