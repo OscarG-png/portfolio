@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import NavMenu from './NavMenu';
 import HomePage from './pages/HomePage';
 import AboutMe from './pages/Aboutme';
-import Projects from './pages/Projects';
+import Projects from './pages/ProjectsPage';
 import { ThemeProvider } from '@/components/theme-provider.tsx';
 import { ModeToggle } from '@/components/mode-toggle';
 
