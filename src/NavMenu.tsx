@@ -2,7 +2,6 @@ import {
     NavigationMenu,
     NavigationMenuItem,
     NavigationMenuLink,
-    NavigationMenuTrigger,
 } from '@/components/ui/navigation-menu';
 import Contact from './pages/Contact';
 
@@ -11,16 +10,16 @@ export default function NavMenu() {
         <div>
             <NavigationMenu className="gap-5">
                 <NavigationMenuItem className="list-none">
-                    <NavigationMenuLink href="/">
+                    <NavigationMenuLink href="/" className="hover:underline">
                         <p>Home</p>
                     </NavigationMenuLink>
                 </NavigationMenuItem>
-                <NavigationMenuItem className="list-none">
+                <NavigationMenuItem className="list-none hover:underline">
                     <NavigationMenuLink href="/aboutme">
                         <p>About me</p>
                     </NavigationMenuLink>
                 </NavigationMenuItem>
-                <NavigationMenuItem className="list-none">
+                <NavigationMenuItem className="list-none hover:underline">
                     <NavigationMenuLink href="/projects">
                         <p>Projects</p>
                     </NavigationMenuLink>

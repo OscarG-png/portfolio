@@ -21,7 +21,7 @@ export default function Projects() {
                             <div className="flex flex-col gap-5">
                                 <Link
                                     to={project.link}
-                                    className="text-blue-500 hover-underline"
+                                    className="text-blue-500 hover:underline"
                                 >
                                     View project
                                 </Link>

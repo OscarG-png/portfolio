@@ -10,7 +10,7 @@ import {
 export default function Contact() {
     return (
         <Dialog>
-            <DialogTrigger>Contact</DialogTrigger>
+            <DialogTrigger className="hover:underline">Contact</DialogTrigger>
             <DialogContent>
                 <DialogHeader>
                     <DialogTitle>Contact Me</DialogTitle>
