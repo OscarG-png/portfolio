@@ -9,7 +9,7 @@ import Contact from './pages/Contact';
 export default function NavMenu() {
     return (
         <div>
-            <NavigationMenu className="gap-2">
+            <NavigationMenu className="gap-5">
                 <NavigationMenuItem className="list-none">
                     <NavigationMenuLink href="/">
                         <p>Home</p>
@@ -21,9 +21,9 @@ export default function NavMenu() {
                     </NavigationMenuLink>
                 </NavigationMenuItem>
                 <NavigationMenuItem className="list-none">
-                    <NavigationMenuTrigger>
+                    <NavigationMenuLink href="/projects">
                         <p>Projects</p>
-                    </NavigationMenuTrigger>
+                    </NavigationMenuLink>
                 </NavigationMenuItem>
                 <NavigationMenuItem className="list-none">
                     <Contact />
