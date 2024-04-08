@@ -4,6 +4,7 @@ import {
     NavigationMenuLink,
     NavigationMenuTrigger,
 } from '@/components/ui/navigation-menu';
+import Contact from './pages/Contact';
 
 export default function NavMenu() {
     return (
@@ -25,7 +26,7 @@ export default function NavMenu() {
                     </NavigationMenuTrigger>
                 </NavigationMenuItem>
                 <NavigationMenuItem className="list-none">
-                    <p>Contact</p>
+                    <Contact />
                 </NavigationMenuItem>
             </NavigationMenu>
         </div>
