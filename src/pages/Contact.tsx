@@ -22,13 +22,13 @@ export default function Contact() {
                 <div className="flex flex-col gap-2">
                     <a
                         href="mailto:oscar.gamez88@gmail.com"
-                        className="hover:underline"
+                        className="hover:underline hover:text-blue-500"
                     >
                         oscar.gamez88@gmail.com
                     </a>
                     <a
                         href="https://www.linkedin.com/in/oscarrgamez/message/"
-                        className="hover:underline"
+                        className="hover:underline hover:text-blue-500"
                     >
                         Linkedin
                     </a>
