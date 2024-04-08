@@ -19,6 +19,20 @@ export default function Contact() {
                         by email.
                     </DialogDescription>
                 </DialogHeader>
+                <div className="flex flex-col gap-2">
+                    <a
+                        href="mailto:oscar.gamez88@gmail.com"
+                        className="hover:underline"
+                    >
+                        oscar.gamez88@gmail.com
+                    </a>
+                    <a
+                        href="https://www.linkedin.com/in/oscarrgamez/message/"
+                        className="hover:underline"
+                    >
+                        Linkedin
+                    </a>
+                </div>
             </DialogContent>
         </Dialog>
     );
