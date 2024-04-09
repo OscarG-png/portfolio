@@ -11,9 +11,10 @@ import { motion } from 'framer-motion';
 export default function Projects() {
     return (
         <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.4 }}
+            initial={{ y: '100%' }}
+            animate={{ y: '0%' }}
+            transition={{ duration: 0.3, ease: 'easeInOut' }}
+            exit={{ opacity: 1 }}
             className="flex flex-col items-center justify-center gap-5 mt-10"
         >
             <h1 className="mb-4 text-4xl">Projects i've worked on</h1>

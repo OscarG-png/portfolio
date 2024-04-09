@@ -5,6 +5,7 @@ import AboutMe from './pages/Aboutme';
 import Projects from './pages/ProjectsPage';
 import { ThemeProvider } from '@/components/theme-provider.tsx';
 import { ModeToggle } from '@/components/mode-toggle';
+import { AnimatePresence } from 'framer-motion';
 
 function App() {
     return (
@@ -14,13 +15,15 @@ function App() {
                 <ModeToggle />
             </div>
             <div className="container">
-                <BrowserRouter>
-                    <Routes>
-                        <Route path="/" element={<HomePage />} />
-                        <Route path="/aboutme" element={<AboutMe />} />
-                        <Route path="/projects" element={<Projects />} />
-                    </Routes>
-                </BrowserRouter>
+                <AnimatePresence mode={'wait'}>
+                    <BrowserRouter>
+                        <Routes>
+                            <Route path="/" element={<HomePage />} />
+                            <Route path="/aboutme" element={<AboutMe />} />
+                            <Route path="/projects" element={<Projects />} />
+                        </Routes>
+                    </BrowserRouter>
+                </AnimatePresence>
             </div>
         </ThemeProvider>
     );

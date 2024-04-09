@@ -11,9 +11,10 @@ export default function HomePage() {
     return (
         <>
             <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 0.4 }}
+                initial={{ y: '100%' }}
+                animate={{ y: '0%' }}
+                transition={{ duration: 0.3, ease: 'easeInOut' }}
+                exit={{ opacity: 1 }}
                 className="flex flex-col items-center h-screen gap-10 mt-20"
             >
                 <h1 className="justify-center text-4xl">Oscar Gamez</h1>
