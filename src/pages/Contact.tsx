@@ -12,8 +12,10 @@ export default function Contact() {
         <Dialog>
             <DialogTrigger className="hover:underline">Contact</DialogTrigger>
             <DialogContent>
-                <DialogHeader>
-                    <DialogTitle>Contact Me</DialogTitle>
+                <DialogHeader className="gap-3">
+                    <DialogTitle className="text-2xl text-center">
+                        Contact Me
+                    </DialogTitle>
                     <DialogDescription>
                         Currently the best way to contact me is on Linkedin or
                         by email.
