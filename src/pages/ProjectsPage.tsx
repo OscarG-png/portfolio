@@ -6,10 +6,16 @@ import {
     AccordionTrigger,
 } from '@/components/ui/accordion';
 import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
 
 export default function Projects() {
     return (
-        <div className="flex flex-col items-center justify-center gap-5 mt-10">
+        <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.4 }}
+            className="flex flex-col items-center justify-center gap-5 mt-10"
+        >
             <h1 className="mb-4 text-4xl">Projects i've worked on</h1>
             {projects.map((project) => (
                 <Accordion
@@ -36,6 +42,6 @@ export default function Projects() {
                     </AccordionItem>
                 </Accordion>
             ))}
-        </div>
+        </motion.div>
     );
 }

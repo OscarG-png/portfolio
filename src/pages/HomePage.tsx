@@ -13,7 +13,7 @@ export default function HomePage() {
             <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                transition={{ duration: 0.5 }}
+                transition={{ duration: 0.4 }}
                 className="flex flex-col items-center h-screen gap-10 mt-20"
             >
                 <h1 className="justify-center text-4xl">Oscar Gamez</h1>
