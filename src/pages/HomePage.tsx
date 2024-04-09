@@ -3,13 +3,19 @@ import { Github } from '../components/icons/Github';
 import { Gitlab } from '../components/icons/Gitlab';
 import { Linkedin } from '../components/icons/Linkedin';
 import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
 
 export default function HomePage() {
     const resumeURL =
         'https://drive.google.com/file/d/1rSLPJtaiFng3bLktbIf4GT7x5kLRMg_6/view?usp=sharing';
     return (
         <>
-            <div className="flex flex-col items-center h-screen gap-10 mt-20">
+            <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.5 }}
+                className="flex flex-col items-center h-screen gap-10 mt-20"
+            >
                 <h1 className="justify-center text-4xl">Oscar Gamez</h1>
                 <img
                     alt="profile"
@@ -30,7 +36,7 @@ export default function HomePage() {
                 <Link to={resumeURL}>
                     <Button>Download Resume</Button>
                 </Link>
-            </div>
+            </motion.div>
         </>
     );
 }
