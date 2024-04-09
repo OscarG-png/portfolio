@@ -12,3 +12,4 @@ Things I'm currently using:
 -   TailwindCSS
 -   Prettier so I can make sure things are formatted in a specific way I want.
 -   SVG icons from https://icon-sets.iconify.design/bx/
+-   Used Framer Motion to animate pages.
