@@ -14,15 +14,13 @@ function App() {
                     <NavMenu />
                     <ModeToggle />
                 </div>
-                <div className="container mx-auto">
-                    <BrowserRouter>
-                        <Routes>
-                            <Route path="/" element={<HomePage />} />
-                            <Route path="/aboutme" element={<AboutMe />} />
-                            <Route path="/projects" element={<Projects />} />
-                        </Routes>
-                    </BrowserRouter>
-                </div>
+                <BrowserRouter>
+                    <Routes>
+                        <Route path="/" element={<HomePage />} />
+                        <Route path="/aboutme" element={<AboutMe />} />
+                        <Route path="/projects" element={<Projects />} />
+                    </Routes>
+                </BrowserRouter>
             </ThemeProvider>
         </>
     );

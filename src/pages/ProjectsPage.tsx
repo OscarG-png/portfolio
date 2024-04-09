@@ -16,7 +16,7 @@ export default function Projects() {
                     key={project.id}
                     type="single"
                     collapsible
-                    className="w-72"
+                    className="w-80"
                 >
                     <AccordionItem value={project.name}>
                         <AccordionTrigger className="text-2xl">
