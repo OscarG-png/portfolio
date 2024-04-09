@@ -8,12 +8,12 @@ import { ModeToggle } from '@/components/mode-toggle';
 
 function App() {
     return (
-        <>
-            <ThemeProvider defaultTheme="system" storageKey="vite-ui-theme">
-                <div className="flex flex-row justify-between mx-5 my-5">
-                    <NavMenu />
-                    <ModeToggle />
-                </div>
+        <ThemeProvider defaultTheme="system" storageKey="vite-ui-theme">
+            <div className="flex flex-row justify-between mx-5 my-5">
+                <NavMenu />
+                <ModeToggle />
+            </div>
+            <div className="container">
                 <BrowserRouter>
                     <Routes>
                         <Route path="/" element={<HomePage />} />
@@ -21,8 +21,8 @@ function App() {
                         <Route path="/projects" element={<Projects />} />
                     </Routes>
                 </BrowserRouter>
-            </ThemeProvider>
-        </>
+            </div>
+        </ThemeProvider>
     );
 }
 
