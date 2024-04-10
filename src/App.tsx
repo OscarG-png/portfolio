@@ -11,7 +11,7 @@ function App() {
     return (
         <ThemeProvider defaultTheme="system" storageKey="vite-ui-theme">
             <Router basename="/portfolio">
-                <div className="flex flex-row justify-between mx-5 my-5">
+                <div className="flex flex-row justify-between gap-2 mx-5 my-5">
                     <NavMenu />
                     <ModeToggle />
                 </div>
