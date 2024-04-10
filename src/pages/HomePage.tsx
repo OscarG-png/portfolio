@@ -19,7 +19,7 @@ export default function HomePage() {
                 <h1 className="justify-center text-4xl">Oscar Gamez</h1>
                 <img
                     alt="profile"
-                    src="/Portfolio-picture.jpeg"
+                    src="https://i.imgur.com/zRkIc9y.jpeg"
                     className="justify-center rounded-full w-30 h-30"
                 />
                 <div className="flex flex-row gap-4">
