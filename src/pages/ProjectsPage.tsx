@@ -5,7 +5,6 @@ import {
     AccordionItem,
     AccordionTrigger,
 } from '@/components/ui/accordion';
-import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
 export default function Projects() {
@@ -31,12 +30,12 @@ export default function Projects() {
                         </AccordionTrigger>
                         <AccordionContent>
                             <div className="flex flex-col gap-5">
-                                <Link
-                                    to={project.link}
+                                <a
+                                    href={project.link}
                                     className="text-blue-500 hover:underline"
                                 >
                                     View project
-                                </Link>
+                                </a>
                                 {project.description}
                             </div>
                         </AccordionContent>
