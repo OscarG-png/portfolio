@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import NavMenu from './NavMenu';
 import HomePage from './pages/HomePage';
 import AboutMe from './pages/Aboutme';
@@ -10,21 +10,21 @@ import { AnimatePresence } from 'framer-motion';
 function App() {
     return (
         <ThemeProvider defaultTheme="system" storageKey="vite-ui-theme">
-            <div className="flex flex-row justify-between mx-5 my-5">
-                <NavMenu />
-                <ModeToggle />
-            </div>
-            <div className="container">
-                <AnimatePresence mode={'wait'}>
-                    <BrowserRouter>
+            <Router>
+                <div className="flex flex-row justify-between mx-5 my-5">
+                    <NavMenu />
+                    <ModeToggle />
+                </div>
+                <div className="container">
+                    <AnimatePresence mode={'wait'}>
                         <Routes>
                             <Route path="/" element={<HomePage />} />
                             <Route path="/aboutme" element={<AboutMe />} />
                             <Route path="/projects" element={<Projects />} />
                         </Routes>
-                    </BrowserRouter>
-                </AnimatePresence>
-            </div>
+                    </AnimatePresence>
+                </div>
+            </Router>
         </ThemeProvider>
     );
 }
