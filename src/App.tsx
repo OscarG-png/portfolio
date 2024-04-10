@@ -10,7 +10,7 @@ import { AnimatePresence } from 'framer-motion';
 function App() {
     return (
         <ThemeProvider defaultTheme="system" storageKey="vite-ui-theme">
-            <Router>
+            <Router basename="/">
                 <div className="flex flex-row justify-between mx-5 my-5">
                     <NavMenu />
                     <ModeToggle />
