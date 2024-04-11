@@ -2,6 +2,7 @@ import { Button } from '@/components/ui/button';
 import { Github } from '../components/icons/Github';
 import { Gitlab } from '../components/icons/Gitlab';
 import { Linkedin } from '../components/icons/Linkedin';
+import { Leetcode } from '../components/icons/Leetcode';
 import { motion } from 'framer-motion';
 import Skills from '../components/Skills';
 
@@ -32,6 +33,9 @@ export default function HomePage() {
                     </a>
                     <a href="https://www.gitlab.com/OscarG">
                         <Gitlab />
+                    </a>
+                    <a href="https://leetcode.com/OscarGamez/">
+                        <Leetcode />
                     </a>
                 </div>
                 <a href={resumeURL}>
