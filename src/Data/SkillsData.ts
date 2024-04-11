@@ -2,9 +2,10 @@ export const frontendSkills = [
     {"id": 1, "name": "React"},
     {"id": 2, "name": "Next.js"},
     {"id": 3, "name": "Tailwind CSS"},
-    {"id": 4, "name": "HTML5"},
-    {"id": 5, "name": "CSS3"},
-    {"id": 6, "name": "Shadcn UI"},
+    {"id": 4, "name": "jest"},
+    {"id": 5, "name": "HTML5"},
+    {"id": 6, "name": "CSS3"},
+    {"id": 7, "name": "Shadcn UI"},
 ];
 
 export const backendSkills = [
@@ -12,8 +13,9 @@ export const backendSkills = [
     {"id": 2, "name": "Docker"},
     {"id": 3, "name": "Node.js"},
     {"id": 4, "name": "Prisma"},
-    {"id": 5, "name": "PostgreSQL"},
-    {"id": 6, "name": "Django"},
+    {"id": 5, "name": "PyTest"},
+    {"id": 6, "name": "PostgreSQL"},
+    {"id": 7, "name": "Django"},
 ];
 
 
