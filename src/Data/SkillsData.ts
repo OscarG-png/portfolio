@@ -26,4 +26,5 @@ export const programingLanguages = [
 export const currentlyLearning = [
     {"id": 1, "name": "C#"},
     {"id": 2, "name": "Tensorflow"},
+    {"id": 3, "name": "Redux"},
 ];
