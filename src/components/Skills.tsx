@@ -4,30 +4,35 @@ import {
     programingLanguages,
     currentlyLearning,
 } from '@/Data/SkillsData';
+import { Separator } from '@/components/ui/separator';
 
 export default function Skills() {
     return (
         <>
-            <div>
-                <h1>Frontend Skills</h1>
+            <div className="flex flex-col gap-1">
+                <h1 className="text-xl">Frontend Skills</h1>
+                <Separator />
                 {frontendSkills.map((skill) => (
                     <div key={skill.id}>{skill.name}</div>
                 ))}
             </div>
-            <div>
-                <h1>Backend Skills</h1>
+            <div className="flex flex-col gap-1">
+                <h1 className="text-xl">Backend Skills</h1>
+                <Separator />
                 {backendSkills.map((skill) => (
                     <div key={skill.id}>{skill.name}</div>
                 ))}
             </div>
-            <div>
-                <h1>Programming Languages</h1>
+            <div className="flex flex-col gap-1">
+                <h1 className="text-xl">Programming Languages</h1>
+                <Separator />
                 {programingLanguages.map((skill) => (
                     <div key={skill.id}>{skill.name}</div>
                 ))}
             </div>
-            <div>
-                <h1>Currently Learning</h1>
+            <div className="flex flex-col gap-1">
+                <h1 className="text-xl">Currently Learning</h1>
+                <Separator />
                 {currentlyLearning.map((skill) => (
                     <div key={skill.id}>{skill.name}</div>
                 ))}

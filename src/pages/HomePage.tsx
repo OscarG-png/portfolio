@@ -37,7 +37,7 @@ export default function HomePage() {
                 <a href={resumeURL}>
                     <Button>Download Resume</Button>
                 </a>
-                <div className="flex flex-row gap-10">
+                <div className="flex flex-col gap-10 sm:flex-row">
                     <Skills />
                 </div>
             </motion.div>
