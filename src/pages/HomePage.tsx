@@ -3,6 +3,7 @@ import { Github } from '../components/icons/Github';
 import { Gitlab } from '../components/icons/Gitlab';
 import { Linkedin } from '../components/icons/Linkedin';
 import { motion } from 'framer-motion';
+import Skills from '../components/Skills';
 
 export default function HomePage() {
     const resumeURL =
@@ -36,6 +37,9 @@ export default function HomePage() {
                 <a href={resumeURL}>
                     <Button>Download Resume</Button>
                 </a>
+                <div className="flex flex-col gap-10 sm:flex-row">
+                    <Skills />
+                </div>
             </motion.div>
         </>
     );
