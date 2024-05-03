@@ -15,8 +15,9 @@ export const backendSkills = [
     {"id": 4, "name": "0auth2"},
     {"id": 5, "name": "Prisma"},
     {"id": 6, "name": "PyTest"},
-    {"id": 7, "name": "PostgreSQL"},
-    {"id": 8, "name": "Django"},
+    {"id": 7, "name": "SQL"},
+    {"id": 8, "name": "PostgreSQL"},
+    {"id": 9, "name": "Django"},
 ];
 
 
