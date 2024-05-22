@@ -18,9 +18,12 @@ export default function HomePage() {
                 exit={{ opacity: 1 }}
                 className="flex flex-col items-center h-screen gap-10 mt-20"
             >
-                <h1 className="justify-center text-4xl" aria-label="name">
-                    Oscar Gamez
-                </h1>
+                <div className="gap2">
+                    <h1 className="justify-center text-4xl" aria-label="name">
+                        Oscar Gamez
+                    </h1>
+                    <p className="text-center">Fullstack Developer</p>
+                </div>
                 <img
                     alt="profile"
                     src="https://i.imgur.com/zRkIc9y.jpeg"
