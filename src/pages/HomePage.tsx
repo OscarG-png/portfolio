@@ -2,6 +2,7 @@ import { Button } from '@/components/ui/button';
 import { Github } from '../components/icons/Github';
 import { Gitlab } from '../components/icons/Gitlab';
 import { Linkedin } from '../components/icons/Linkedin';
+import { Leetcode } from '../components/icons/Leetcode';
 import { motion } from 'framer-motion';
 import Skills from '../components/Skills';
 
@@ -17,21 +18,30 @@ export default function HomePage() {
                 exit={{ opacity: 1 }}
                 className="flex flex-col items-center h-screen gap-10 mt-20"
             >
-                <h1 className="justify-center text-4xl">Oscar Gamez</h1>
+                <div className="gap2">
+                    <h1 className="justify-center text-4xl" aria-label="name">
+                        Oscar Gamez
+                    </h1>
+                    <p className="text-center">Fullstack Developer</p>
+                </div>
                 <img
                     alt="profile"
                     src="https://i.imgur.com/zRkIc9y.jpeg"
                     className="justify-center rounded-full w-30 h-30"
+                    aria-label="profile picture"
                 />
                 <div className="flex flex-row gap-4">
                     <a href="https://www.linkedin.com/in/oscarrgamez/">
-                        <Linkedin />
+                        <Linkedin aria-label="Linkedin link" />
                     </a>
                     <a href="https://www.github.com/OscarG-PNG">
-                        <Github />
+                        <Github aria-label="github link" />
                     </a>
                     <a href="https://www.gitlab.com/OscarG">
-                        <Gitlab />
+                        <Gitlab aria-label="gitlab link" />
+                    </a>
+                    <a href="https://leetcode.com/OscarGamez/">
+                        <Leetcode aria-label="leetcode link" />
                     </a>
                 </div>
                 <a href={resumeURL}>
